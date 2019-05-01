@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+			PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+			"http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap>
+	<select id="selectLeft" parameterClass="ProdVO" resultClass="ProdVO">
+		SELECT LPROD_NM FROM LPROD;
+	</select>
+
+	<!-- <select id="selectLeft" parameterClass="ProdVO" resultClass="ProdVO">
+		SELECT * FROM jdbc_board WHERE 1=1
+		<isNotEmpty property="prod_id"> AND prod_id = #prod_id#</isNotEmpty>
+		<isNotEmpty property="prod_name"> AND prod_name = #prod_name#</isNotEmpty>
+		<isNotEmpty property="prod_lgu"> AND prod_lgu = #prod_lgu#</isNotEmpty>
+		<isNotEmpty property="prod_buyer"> AND prod_buyer = #prod_buyer#</isNotEmpty>
+		<isNotEmpty property="prod_cost"> AND prod_cost LIKE '%' || #prod_cost# || '%'</isNotEmpty>
+	</select>
+	
+	<select id="selectRight" resultClass="BoardVO">
+		SELECT * FROM jdbc_board
+	</select> -->
+	
+</sqlMap>			
+
+
+
+
+
