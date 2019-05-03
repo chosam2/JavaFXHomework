@@ -5,9 +5,7 @@
 
 <sqlMapConfig>
 	<!-- 
-	DB와 연결하는 정보를 properties파일에 설정해 놓고 이 properties파일의
-	내용을 읽어와 설정한다.
-	 -->
+	DB와 연결하는 정보를 properties파일에 설정해 놓고 이 properties파일의 내용을 읽어와 설정한다.-->
 	<properties resource="SqlMapConfig.properties" />
 	
 	<!-- ibatis를 처리하기 위한 환경설정 부분 -->
@@ -22,7 +20,7 @@
 	형식) <typeAlias alias="alias명" type="클래스의 풀네임"/>
 	 -->
 	<typeAlias alias="prodVO" type="kr.or.ddit.vo.ProdVO"/>
-<!-- 	<typeAlias alias="memVO" type="ibatis.member.vo.MemberVO"/> -->
+	<typeAlias alias="lprodVO" type="kr.or.ddit.vo.LprodVO"/>
 
 	<!-- 
 	DB와의 연결을 처리하는 부분
@@ -47,8 +45,6 @@
 	형식) <sqlMap resource="경로명/파일명.xml"/> 
 	-->
 
-	<!-- <sqlMap resource="basic/member.xml"/> -->
-	<!-- <sqlMap resource="ibatis/member/memberMain.xml"/> -->
 	<sqlMap resource="kr.or.ddit.sql/prod.xml"/>
 </sqlMapConfig>
 
